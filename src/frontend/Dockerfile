@@ -1,7 +1,7 @@
 FROM golang:1.14-alpine as builder
 RUN apk add --no-cache ca-certificates git
 
-ENV PROJECT github.com/signalfx/microservices-demo/src/frontend
+ENV PROJECT github.com/jstarofsky/microservices-demo/src/frontend
 WORKDIR /go/src/$PROJECT
 
 COPY . .
